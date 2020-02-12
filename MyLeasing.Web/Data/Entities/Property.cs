@@ -20,27 +20,27 @@ namespace MyLeasing.Web.Data.Entities
         [Display(Name = "Price*")]
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         [DisplayFormat(DataFormatString ="{0:C2}", ApplyFormatInEditMode = false)]
-        public string Price { get; set; }
+        public decimal Price { get; set; }
 
         [Display(Name = "Square meters*")]
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public string SquareMeters { get; set; }
+        public int SquareMeters { get; set; }
 
         [Display(Name = "Rooms*")]
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public string Rooms { get; set; }
+        public int Rooms { get; set; }
 
         [Display(Name = "Stratum*")]
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public string Stratum { get; set; }
+        public int Stratum { get; set; }
 
         [Display(Name = "Has Parking Lot?")]
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public string HasParkingLot { get; set; }
+        public bool HasParkingLot { get; set; }
 
         [Display(Name = "Is Available?")]
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public string IsAvailable { get; set; }
+        public bool IsAvailable { get; set; }
 
         public string Remarks { get; set; }
 
