@@ -13,10 +13,10 @@ namespace MyLeasing.Web.Data.Entities
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         public string Remarks { get; set; }
 
-        [Display(Name = "Price*")]
+        [Display(Name = "Price")]
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
-        public string Price { get; set; }
+        public decimal Price { get; set; }
 
         [Display(Name = "Start Date")]
         [Required(ErrorMessage = "The field {0} is mandatory.")]
